@@ -1,0 +1,40 @@
+site_name: Nautilus
+site_description: Nautilus method for the FTO twisty puzzle
+
+theme:
+  name: material
+  logo: assets/Icon.png
+  favicon: assets/Icon.png
+  palette:
+    scheme: default # use 'slate' for dark mode)
+    primary: indigo
+    accent: blue
+  features:
+    - navigation.tabs # Moves navigation links into the TOP HEADER bar
+    - navigation.tabs.sticky # Keeps header bar pinned while scrolling
+    - navigation.top # Adds a smooth "back-to-top" scroll button
+    - navigation.prune # Remove left side navigation
+
+extra_javascript:
+  - path: https://cdn.cubing.net/v0/js/cubing/twisty
+    type: module
+
+# Add markdown_extensions to allow raw HTML blocks
+markdown_extensions:
+  - md_in_html
+  - extra
+
+# Extra CSS for header banner styling
+extra_css:
+  - stylesheets/extra.css
+
+# Top Header Navigation Structure
+nav:
+  - Introduction: index.md
+  - Step 1 - First Block: Step1.md
+  - Step 2 - Centers: Step2.md
+  - Step 3 - Last Triple: Step3.md
+  - Step 4 - Last Layer: Step4.md
+  - Baby Nautilus: BabyNautilus.md
+  - Notation: Notation.md
+  - Summary: Summary.md

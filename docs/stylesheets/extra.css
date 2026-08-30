@@ -1,0 +1,119 @@
+/* Header banner styling */
+.md-header {
+  background-image: url('../assets/Banner.png'); /* Replace with your image filename */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Set the global header height variable */
+:root {
+  --md-header-height: 120px; /* Adjust height to your preference (default is ~48px) */
+}
+
+/* Expand the header bar container to match */
+.md-header__inner {
+  height: var(--md-header-height);
+  align-items: center; /* Keeps logo and nav titles centered vertically */
+}
+
+/* Push main page content down so it doesn't get covered by the header */
+.md-main {
+  margin-top: var(--md-header-height);
+}
+
+/* Increase or decrease the Site Title font size */
+.md-header__title {
+  font-size: 2rem; /* Default is ~1rem. Increase to 1.8rem, 2rem, etc. */
+  font-weight: 700;
+}
+
+/* Adjust the logo height inside the header */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 3rem; /* Increase to make the logo larger (e.g., 2.5rem or 3rem) */
+  width: auto;
+}
+
+/* Force bold on markdown content headings */
+.md-typeset h1, 
+.md-typeset h2, 
+.md-typeset h3, 
+.md-typeset h4, 
+.md-typeset h5, 
+.md-typeset h6 {
+  font-weight: 700 !important;
+}
+
+/* Hide the left-hand navigation sidebar drawer */
+.md-sidebar--primary {
+  display: none;
+}
+
+/* Ensure main page content expands to fill the space cleanly after having removed the left side bar */
+.md-content {
+  max-width: 100%;
+}
+
+/* Card wrapper for each pair */
+.pair-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+  max-width: 500px;
+}
+
+/* Centered text below the pair */
+.pair-caption {
+  text-align: center;
+  margin-top: 0.75rem;
+  font-weight: 500;
+  color: var(--md-default-foreground);
+}
+
+/* Single solve player plus alg viewer div styling */
+.solve-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+/* Single solve player only styling */
+#fto-player {
+  width: 400px;
+  height: 400px;
+  max-width: 100%;
+}
+
+/* Alg viewer styling */
+twisty-alg-viewer {
+  display: block;
+  width: 400px;
+  max-width: 100%;
+  margin-top: 1rem;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* twisty-player grid layouts */
+.applet-grid-nowrap {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.applet-grid-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0;
+}
