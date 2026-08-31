@@ -59,9 +59,12 @@
   font-weight: 700 !important;
 }
 
-/* Hide the left-hand navigation sidebar drawer */
-.md-sidebar--primary {
-  display: none;
+/* Hide the left-hand navigation sidebar on desktop only —
+   mobile still needs it for the hamburger-triggered drawer */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary {
+    display: none;
+  }
 }
 
 /* Ensure main page content expands to fill the space cleanly after having removed the left side bar */
