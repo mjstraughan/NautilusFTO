@@ -5,8 +5,196 @@
   background-position: center;
 }
 
-/* Ensure twisty-player elements display nicely in grid layouts */
-.applet-grid {
+/* Set the global header height variable */
+:root {
+  --md-header-height: 120px; /* Adjust height to your preference (default is ~48px) */
+}
+
+/* Expand the header bar container to match */
+.md-header__inner {
+  height: var(--md-header-height);
+  align-items: center; /* Keeps logo and nav titles centered vertically */
+}
+
+/* Push main page content down so it doesn't get covered by the header */
+.md-main {
+  margin-top: var(--md-header-height);
+}
+
+/* Reset the main content container top margin */
+.md-main {
+  margin-top: 0;
+}
+
+/* Tighten the padding at the very top of the page content */
+.md-content {
+  padding-top: 1rem; /* Adjust down to 0.5rem if you want it even closer */
+}
+
+/* Reduce top margin on the first heading on the page */
+.md-content__inner > h1:first-child {
+  margin-top: 0.5rem;
+}
+
+/* Increase or decrease the Site Title font size */
+.md-header__title {
+  font-size: 2rem; /* Default is ~1rem. Increase to 1.8rem, 2rem, etc. */
+  font-weight: 700;
+}
+
+/* Adjust the logo height inside the header */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 3rem; /* Increase to make the logo larger (e.g., 2.5rem or 3rem) */
+  width: auto;
+}
+
+/* Force bold on markdown content headings */
+.md-typeset h1, 
+.md-typeset h2, 
+.md-typeset h3, 
+.md-typeset h4, 
+.md-typeset h5, 
+.md-typeset h6 {
+  font-weight: 700 !important;
+}
+
+/* Hide the left-hand navigation sidebar drawer */
+.md-sidebar--primary {
+  display: none;
+}
+
+/* Ensure main page content expands to fill the space cleanly after having removed the left side bar */
+.md-content {
+  max-width: 100%;
+}
+
+/* ☀️ LIGHT MODE BLUE LINK STYLE */
+[data-md-color-scheme="default"] .custom-styled-link {
+  color: #1A365D !important; /* Deep Navy base */
+}
+[data-md-color-scheme="default"] .custom-styled-link:hover {
+  color: #007BFF !important; /* Vivid Electric Blue hover */
+}
+
+/* 🌙 DARK MODE BLUE LINK STYLE */
+[data-md-color-scheme="slate"] .custom-styled-link {
+  color: #3B82F6 !important; /* Royal Blue base (high visibility against slate) */
+}
+[data-md-color-scheme="slate"] .custom-styled-link:hover {
+  color: #00E5FF !important; /* Neon Bright Blue hover */
+}
+
+/* 📐 UNIVERSAL ALIGNMENT & FONT RULES */
+.custom-styled-link {
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.centered-link-wrapper {
+  text-align: center;
+  margin: 24px 0;
+}
+
+/* Container to center the link line */
+.centered-link-wrapper {
+  text-align: center;
+  margin: 20px 0; /* Optional: adds space above and below */
+}
+
+/* Custom styles for the link itself */
+.custom-styled-link {
+  font-weight: bold;         /* Bold the text */
+  font-size: 24px;           /* Resize the link text */
+  color: #ff5722 !important; /* Recolor the link (adjust hex as needed) */
+  text-decoration: none;     /* Optional: removes the underline */
+}
+
+/* Optional hover state color adjustment */
+.custom-styled-link:hover {
+  color: #e64a19 !important; 
+}
+
+
+/* Card wrapper for each pair */
+.pair-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+  max-width: 500px;
+}
+
+/* Centered text below the pair */
+.pair-caption {
+  text-align: center;
+  margin-top: 0.75rem;
+  font-weight: 500;
+  color: var(--md-default-foreground);
+}
+
+/* Single solve player plus alg viewer div styling */
+.solve-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+/* Row wrapper for placing two solve-containers side by side */
+.solve-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.solve-row .solve-container {
+  width: auto;
+  flex: 1 1 300px;
+  min-width: 0;
+  margin: 1rem 0;
+}
+
+/* Match alg-viewer width to the player width used inside .solve-container */
+.solve-container twisty-alg-viewer {
+  width: 300px;
+  max-width: 100%;
+}
+
+/* Single solve player only styling */
+#fto-player {
+  width: 400px;
+  height: 400px;
+  max-width: 100%;
+}
+
+/* Alg viewer styling */
+twisty-alg-viewer {
+  display: block;
+  width: 400px;
+  max-width: 100%;
+  margin-top: 1rem;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* twisty-player grid layouts */
+.applet-grid-nowrap {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.applet-grid-wrap {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -15,7 +203,31 @@
   margin: 1.5rem 0;
 }
 
-twisty-player {
-  width: 220px;
-  height: 220px;
+/* NEW: let applets shrink and split their row's width evenly */
+.applet-grid-nowrap,
+.applet-grid-wrap {
+  min-width: 0;
+}
+
+.applet-grid-nowrap twisty-player,
+.applet-grid-wrap twisty-player {
+  flex: 1 1 0;
+  min-width: 0;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-width: 260px; /* ceiling so a lone applet in a row doesn't get huge */
+}
+
+/* Row wrapper for placing two pair-cards side by side */
+.pair-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.pair-row .pair-card {
+  margin: 1rem 0;   /* drop the left/right auto margin from .pair-card while in a row */
+  min-width: 0;
+  flex: 1 1 300px;
 }

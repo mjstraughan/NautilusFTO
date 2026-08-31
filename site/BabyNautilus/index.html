@@ -1,0 +1,1361 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Nautilus method for the FTO twisty puzzle">
+      
+      
+      
+      
+        <link rel="prev" href="../Step4/">
+      
+      
+        <link rel="next" href="../Notation/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/Icon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Baby Nautilus - Nautilus</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#baby-nautilus" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Nautilus" class="md-header__button md-logo" aria-label="Nautilus" data-md-component="logo">
+      
+  <img src="../assets/Icon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Nautilus
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Baby Nautilus
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Introduction
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Step1/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Step 1 - First Block
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Step2/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Step 2 - Centers
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Step3/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Step 3 - Last Triple
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Step4/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Step 4 - Last Layer
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Baby Nautilus
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Notation/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Notation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Summary/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Summary
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Algorithms/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Algorithms
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Nautilus" class="md-nav__button md-logo" aria-label="Nautilus" data-md-component="logo">
+      
+  <img src="../assets/Icon.png" alt="logo">
+
+    </a>
+    Nautilus
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Step1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step 1 - First Block
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Step2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step 2 - Centers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Step3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step 3 - Last Triple
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Step4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step 4 - Last Layer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Baby Nautilus
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Baby Nautilus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#first-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        First Block
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#triple" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Triple
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cll" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CLL
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#one-step-first-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        One Step First Layer
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advancements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advancements
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alternate-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alternate Steps
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Notation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Notation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Summary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Summary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Algorithms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Algorithms
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#first-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        First Block
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#triple" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Triple
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cll" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CLL
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#one-step-first-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        One Step First Layer
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advancements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advancements
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alternate-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alternate Steps
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="baby-nautilus">Baby Nautilus</h1>
+<p>This is an adaption of Nautilus to Baby FTO (aka Skewb Diamond, aka 2x2 FTO). It is best to directly solve the first layer in the best way for each scramble, then finish with CLL. But this set of steps is a way to simplify the first layer as a way to get to the point of being able to handle full layer building. These steps align with Nautilus on FTO because the centers in the R layer in Baby Nautilus can be viewed as the large centers of the wide r layers in FTO Nautilus. This method follows the same steps of FB &gt; Centers &gt; Triple &gt; Last Layer.</p>
+<div class="centered-link-wrapper">
+    <a href="https://docs.google.com/spreadsheets/d/1hyGv6J2Xy1CHW__pmOk2DNyC7_VQ8FGuOAAVjwwXmTg/edit?usp=sharing" class="custom-styled-link">Baby FTO Algorithm List</a>
+</div>
+
+<div class="applet-grid-nowrap">
+
+    <twisty-player
+        puzzle="baby_fto"
+        experimental-setup-alg="LBLv"
+        experimental-setup-anchor="end"
+        background="none"
+        control-panel="none"
+        style="max-width: 300px; height: 300px;"
+    ></twisty-player>
+
+</div>
+
+<h2 id="first-block">First Block</h2>
+<p>Solve two corners and the two centers between them, then keep the block at the bottom left.</p>
+<div class="solve-row">
+
+    <div class="solve-container">
+
+        <twisty-player
+            puzzle="baby_fto"
+            experimental-stickering-mask-orbits="C4RNER:-IIII-,CENTERS:IIIII-I-"
+            experimental-setup-alg="LBLv"
+            camera-latitude="-15"
+            camera-longitude="-120"
+            experimental-setup-anchor="end"
+            background="none"
+            control-panel="none"
+            style="max-width: 300px; height: 350px;"
+        ></twisty-player>
+
+    </div>
+
+    <div class="solve-container">
+
+        <twisty-player
+            puzzle="baby_fto"
+            experimental-stickering-mask-orbits="C4RNER:-IIII-,CENTERS:IIIII-I-"
+            experimental-setup-alg="LBLv"
+            experimental-setup-anchor="end"
+            background="none"
+            control-panel="none"
+            style="max-width: 300px; height: 350px;"
+        ></twisty-player>
+
+    </div>
+</div>
+
+<h2 id="triple">Triple</h2>
+<p>Finish the first layer by solving the last two centers and the last corner. This can be simplified to turning the R layer to move the U center to the U layer, automatically aligning all R layer surrounding centers. Then solve the last corner of the first layer. The corner substep aligns with FTO Nautilus because there are no small center triangles on Baby FTO, leaving just a corner to be solved.</p>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
+    <div class="pair-card">
+    <div class="applet-grid-nowrap">
+        <twisty-player
+            puzzle="baby_fto"
+            experimental-stickering-mask-orbits="C4RNER:-IIII-,CENTERS:III-----"
+            experimental-setup-alg="LBLv"
+            experimental-setup-anchor="end"
+            background="none"
+            control-panel="none"
+            style="max-width: 300px; height: 350px;"
+        ></twisty-player>
+    </div>
+
+    <p class="pair-caption">1: Turn the R layer to align the centers.</p>
+    </div>
+
+    <div class="pair-card">
+    <div class="applet-grid-nowrap">
+        <twisty-player
+            puzzle="baby_fto"
+            experimental-stickering-mask-orbits="C4RNER:-I-II-,CENTERS:III-----"
+            experimental-setup-alg="LBLv"
+            experimental-setup-anchor="end"
+            background="none"
+            control-panel="none"
+            style="max-width: 300px; height: 350px;"
+        ></twisty-player>
+        </div>
+
+        <p class="pair-caption">2: Solve the last corner of the first layer.</p>
+    </div>
+</div>
+
+<p>There are just three cases for solving the final corner.</p>
+<div class="solve-row">
+
+  <div class="solve-container">
+    <twisty-player
+        id="fto-player-1"
+        puzzle="baby_fto"
+        experimental-stickering-mask-orbits="C4RNER:-I-II-,CENTERS:III-----"
+        experimental-setup-alg="LBLv R U R'"
+        alg="R U' R'"
+        background="none"
+        style="max-width: 300px; height: 425px; margin-top: -50px;"
+    ></twisty-player>
+
+    <twisty-alg-viewer for="fto-player-1"></twisty-alg-viewer>
+  </div>
+
+  <div class="solve-container">
+    <twisty-player
+        id="fto-player-2"
+        puzzle="baby_fto"
+        experimental-stickering-mask-orbits="C4RNER:-I-II-,CENTERS:III-----"
+        experimental-setup-alg="LBLv R U' R'"
+        alg="R U R'"
+        background="none"
+        style="max-width: 300px; height: 425px; margin-top: -50px;"
+    ></twisty-player>
+
+    <twisty-alg-viewer for="fto-player-2"></twisty-alg-viewer>
+  </div>
+
+  <div class="solve-container">
+    <twisty-player
+        id="fto-player-3"
+        puzzle="baby_fto"
+        experimental-stickering-mask-orbits="C4RNER:-I-II-,CENTERS:III-----"
+        experimental-setup-alg="LBLv R' U' R' U' R'"
+        alg="R U R U R"
+        background="none"
+        style="max-width: 300px; height: 425px; margin-top: -50px;"
+    ></twisty-player>
+
+    <twisty-alg-viewer for="fto-player-3"></twisty-alg-viewer>
+  </div>
+
+</div>
+
+<p>The centers and the final corner can be combined into a single step of solving the triple on the first layer. Below are the solutions for this combined step. You already know the three cases above when the centers are aligned, leaving just eight additional cases to learn. Really this step is intuitive because you simply align a center with the corner then attach that pair to the other center.</p>
+<div class="solve-row">
+
+  <div class="solve-container">
+    <twisty-player
+        id="fto-player-4"
+        puzzle="baby_fto"
+        experimental-stickering-mask-orbits="C4RNER:-I-II-,CENTERS:III-----"
+        experimental-setup-alg="LBLv R'"
+        alg="R"
+        background="none"
+        style="max-width: 300px; height: 425px; margin-top: -50px;"
+    ></twisty-player>
+
+    <twisty-alg-viewer for="fto-player-4"></twisty-alg-viewer>
+  </div>
+
+  <div class="solve-container">
+    <twisty-player
+        id="fto-player-5"
+        puzzle="baby_fto"
+        experimental-stickering-mask-orbits="C4RNER:-I-II-,CENTERS:III-----"
+        experimental-setup-alg="LBLv R"
+        alg="R'"
+        background="none"
+        style="max-width: 300px; height: 425px; margin-top: -50px;"
+    ></twisty-player>
+
+    <twisty-alg-viewer for="fto-player-5"></twisty-alg-viewer>
+  </div>
+
+  <div class="solve-container">
+    <twisty-player
+        id="fto-player-6"
+        puzzle="baby_fto"
+        experimental-stickering-mask-orbits="C4RNER:-I-II-,CENTERS:III-----"
+        experimental-setup-alg="LBLv R U R"
+        alg="R' U' R'"
+        background="none"
+        style="max-width: 300px; height: 425px; margin-top: -50px;"
+    ></twisty-player>
+
+    <twisty-alg-viewer for="fto-player-6"></twisty-alg-viewer>
+  </div>
+
+</div>
+
+<div class="solve-row">
+
+  <div class="solve-container">
+    <twisty-player
+        id="fto-player-7"
+        puzzle="baby_fto"
+        experimental-stickering-mask-orbits="C4RNER:-I-II-,CENTERS:III-----"
+        experimental-setup-alg="LBLv R' U' R'"
+        alg="R U R"
+        background="none"
+        style="max-width: 300px; height: 425px; margin-top: -50px;"
+    ></twisty-player>
+
+    <twisty-alg-viewer for="fto-player-7"></twisty-alg-viewer>
+  </div>
+
+  <div class="solve-container">
+    <twisty-player
+        id="fto-player-8"
+        puzzle="baby_fto"
+        experimental-stickering-mask-orbits="C4RNER:-I-II-,CENTERS:III-----"
+        experimental-setup-alg="LBLv R U' R"
+        alg="R' U R'"
+        background="none"
+        style="max-width: 300px; height: 425px; margin-top: -50px;"
+    ></twisty-player>
+
+    <twisty-alg-viewer for="fto-player-8"></twisty-alg-viewer>
+  </div>
+
+  <div class="solve-container">
+    <twisty-player
+        id="fto-player-9"
+        puzzle="baby_fto"
+        experimental-stickering-mask-orbits="C4RNER:-I-II-,CENTERS:III-----"
+        experimental-setup-alg="LBLv R U R' U' R'"
+        alg="R U R U' R'"
+        background="none"
+        style="max-width: 300px; height: 425px; margin-top: -50px;"
+    ></twisty-player>
+
+    <twisty-alg-viewer for="fto-player-9"></twisty-alg-viewer>
+  </div>
+
+</div>
+
+<div class="solve-row">
+
+  <div class="solve-container">
+    <twisty-player
+        id="fto-player-10"
+        puzzle="baby_fto"
+        experimental-stickering-mask-orbits="C4RNER:-I-II-,CENTERS:III-----"
+        experimental-setup-alg="LBLv R' U R'"
+        alg="R U' R"
+        background="none"
+        style="max-width: 300px; height: 425px; margin-top: -50px;"
+    ></twisty-player>
+
+    <twisty-alg-viewer for="fto-player-10"></twisty-alg-viewer>
+  </div>
+
+    <div class="solve-container">
+    <twisty-player
+        id="fto-player-11"
+        puzzle="baby_fto"
+        experimental-stickering-mask-orbits="C4RNER:-I-II-,CENTERS:III-----"
+        experimental-setup-alg="LBLv R U R U' R'"
+        alg="R U R' U' R'"
+        background="none"
+        style="max-width: 300px; height: 425px; margin-top: -50px;"
+    ></twisty-player>
+
+    <twisty-alg-viewer for="fto-player-11"></twisty-alg-viewer>
+  </div>
+</div>
+
+<h2 id="cll">CLL</h2>
+<p>Now solve the corners of the last layer using a single algorithm. There are only five algorithms to learn.</p>
+<div class="solve-row">
+
+  <div class="solve-container">
+    <twisty-player
+        id="fto-player-12"
+        puzzle="baby_fto"
+        experimental-setup-alg="LBLv U BL U' BL U BL U' BL"
+        alg="BL' U BL' U' BL' U BL' U'"
+        background="none"
+        style="max-width: 300px; height: 425px; margin-top: -50px;"
+    ></twisty-player>
+
+    <twisty-alg-viewer for="fto-player-12"></twisty-alg-viewer>
+    <p class="pair-caption">{BL, L} U' R U' R' U' R U' R'</p>
+  </div>
+
+    <div class="solve-container">
+    <twisty-player
+        id="fto-player-13"
+        puzzle="baby_fto"
+        experimental-setup-alg="LBLv BL' U BL' U' BL' U BL' U'"
+        alg="U BL U' BL U BL U' BL"
+        background="none"
+        style="max-width: 300px; height: 425px; margin-top: -50px;"
+    ></twisty-player>
+
+    <twisty-alg-viewer for="fto-player-13"></twisty-alg-viewer>
+    <p class="pair-caption">{BL, L} R U R' U R U R' U</p>
+  </div>
+</div>
+
+<div class="solve-row">
+
+  <div class="solve-container">
+    <twisty-player
+        id="fto-player-14"
+        puzzle="baby_fto"
+        experimental-setup-alg="LBLv L R' L' R U R' L R L' U'"
+        alg="(U) L R' L' R U' R' L R L'"
+        background="none"
+        style="max-width: 300px; height: 425px; margin-top: -50px;"
+    ></twisty-player>
+
+    <twisty-alg-viewer for="fto-player-14"></twisty-alg-viewer>
+  </div>
+
+  <div class="solve-container">
+    <twisty-player
+        id="fto-player-15"
+        puzzle="baby_fto"
+        experimental-setup-alg="LBLv R' L R L' R' L R L' U'"
+        alg="U L R' L' R L R' L' R"
+        background="none"
+        style="max-width: 300px; height: 425px; margin-top: -50px;"
+    ></twisty-player>
+
+    <twisty-alg-viewer for="fto-player-15"></twisty-alg-viewer>
+    <p class="pair-caption">(U) {L, F} U R' U' R U R' U' R</p>
+  </div>
+
+  <div class="solve-container">
+    <twisty-player
+        id="fto-player-16"
+        puzzle="baby_fto"
+        experimental-setup-alg="LBLv L R' L' R L R' L' R U"
+        alg="(U') R' L R L' R' L R L'"
+        background="none"
+        style="max-width: 300px; height: 425px; margin-top: -50px;"
+    ></twisty-player>
+
+    <twisty-alg-viewer for="fto-player-16"></twisty-alg-viewer>
+    <p class="pair-caption">(U') {L, F} R' U R U' R' U R U'</p>
+  </div>
+
+</div>
+
+<h2 id="one-step-first-layer">One Step First Layer</h2>
+<p>The most advanced form of solving the first layer is to solve it in the way that best fits the current scramble.</p>
+<div class="solve-row">
+
+    <div class="solve-container">
+
+        <twisty-player
+            puzzle="baby_fto"
+            experimental-stickering-mask-orbits="C4RNER:-I-II-,CENTERS:III-I---"
+            experimental-setup-alg="LBLv"
+            camera-latitude="-15"
+            camera-longitude="0"
+            experimental-setup-anchor="end"
+            background="none"
+            control-panel="none"
+            style="max-width: 300px; height: 350px;"
+        ></twisty-player>
+
+    </div>
+
+    <div class="solve-container">
+
+        <twisty-player
+            puzzle="baby_fto"
+            experimental-stickering-mask-orbits="C4RNER:-I-II-,CENTERS:III-I---"
+            experimental-setup-alg="LBLv"
+            experimental-setup-anchor="end"
+            background="none"
+            control-panel="none"
+            style="max-width: 300px; height: 350px;"
+        ></twisty-player>
+
+    </div>
+</div>
+
+<p>Another idea to advance first layer solving is to leave out the D center when building the first block, then solve the remainder of the first layer. This is the DR corner and D, F, and BR centers at 35 cases.</p>
+<div class="solve-row">
+
+    <div class="solve-container">
+
+        <twisty-player
+            puzzle="baby_fto"
+            experimental-stickering-mask-orbits="C4RNER:-IIII-,CENTERS:IIIII-II"
+            experimental-setup-alg="LBLv"
+            camera-latitude="-15"
+            camera-longitude="0"
+            experimental-setup-anchor="end"
+            background="none"
+            control-panel="none"
+            style="max-width: 300px; height: 350px;"
+        ></twisty-player>
+
+    </div>
+
+    <div class="solve-container">
+
+        <twisty-player
+            puzzle="baby_fto"
+            experimental-stickering-mask-orbits="C4RNER:-I-II-,CENTERS:III-I---"
+            experimental-setup-alg="LBLv"
+            experimental-setup-anchor="end"
+            background="none"
+            control-panel="none"
+            style="max-width: 300px; height: 350px;"
+        ></twisty-player>
+
+    </div>
+</div>
+
+<h2 id="advancements">Advancements</h2>
+<p>To really advance the method, part of solving the first layer can be combined with solving the last layer. Some ideas below:</p>
+<ul>
+<li>First layer minus one corner then solve the last corner and last layer in one step.</li>
+<li>First Block then solve the remaining pieces within the U and R layers. This is 11 cases if Corner Permutation First Block is performed and 107 cases with normal First Block.</li>
+<li>First Block minus the D center then solve the remaining pieces in 395 cases.</li>
+</ul>
+<h2 id="alternate-steps">Alternate Steps</h2>
+<p>Below is another set of steps that could also be viewed as a Nautilus adaption. This one views the D center as the bottom triangle of the last F2L triple in FTO Nautilus. These steps are a simplified version of the advanced first layer idea above.</p>
+<ul>
+<li>FB: Pair two adjacent corners on the first layer and the triangle that belongs between them.</li>
+<li>Centers: Simply turn R to move the yellow center to the upper layer.</li>
+<li>Pair: Solve the final two pieces of the first layer.</li>
+<li>CLL: Solve the last layer.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.prune"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="https://cdn.cubing.net/v0/js/cubing/twisty" type="module"></script>
+      
+    
+  </body>
+</html>
