@@ -29,8 +29,7 @@ If there are no diamonds, use one of the algorithms to move a triangle to an edg
 
 The applets depict an overhead view of the last layer with the front corner at the bottom.
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
-    <div class="pair-card">
+<div class="pair-card">
     <div class="applet-grid-nowrap">
         <twisty-player
         puzzle="fto"
@@ -58,11 +57,10 @@ The applets depict an overhead view of the last layer with the front corner at t
         control-panel="none"
         ></twisty-player>
     </div>
-    
     <p class="pair-caption">{U, R} (U') R U R' U' R' r U R U' r'</p>
-    </div>
+</div>
 
-    <div class="pair-card">
+<div class="pair-card">
     <div class="applet-grid-nowrap">
         <twisty-player
             puzzle="fto"
@@ -89,12 +87,11 @@ The applets depict an overhead view of the last layer with the front corner at t
             background="none"
             control-panel="none"
         ></twisty-player>
-        </div>
-
-        <p class="pair-caption">{U, R} F' U R U' r' L R' L' r F</p>
     </div>
+    <p class="pair-caption">{U, R} F' U R U' r' L R' L' r F</p>
+</div>
 
-    <div class="pair-card">
+<div class="pair-card">
     <div class="applet-grid-nowrap">
         <twisty-player
             puzzle="fto"
@@ -121,12 +118,11 @@ The applets depict an overhead view of the last layer with the front corner at t
             background="none"
             control-panel="none"
         ></twisty-player>
-        </div>
-
-        <p class="pair-caption">{U, R} (U) r U R' U' r' L R L'</p>
     </div>
+    <p class="pair-caption">{U, R} (U) r U R' U' r' L R L'</p>
+</div>
 
-    <div class="pair-card">
+<div class="pair-card">
     <div class="applet-grid-nowrap">
         <twisty-player
             puzzle="fto"
@@ -153,10 +149,8 @@ The applets depict an overhead view of the last layer with the front corner at t
             background="none"
             control-panel="none"
         ></twisty-player>
-        </div>
-
-        <p class="pair-caption">{U,R} (U) L R' L' r U R U' r'</p>
     </div>
+    <p class="pair-caption">{U,R} (U) L R' L' r U R U' r'</p>
 </div>
 
 ### Two Look L6X

@@ -137,6 +137,10 @@
   color: var(--md-default-foreground);
 }
 
+.pair-card .applet-grid-nowrap {
+  width: 100%;
+}
+
 /* Single solve player plus alg viewer div styling */
 .solve-container {
   display: flex;
