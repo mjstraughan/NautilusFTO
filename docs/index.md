@@ -43,7 +43,7 @@ experimental-setup-anchor="end"
 control-panel="none"
   ></twisty-player>
 
-</div>s
+</div>
 
 Nautilus is a Face Turning Octahedron (FTO) speedsolving method designed for ergonomics, efficiency, and automation. The first two steps of the method intuitively solve pieces in such a way that blind spots are minimized and look ahead is maximized. The final two steps are automated through the use of algorithms. Recognition is simple thanks to all pieces being in view.
 
