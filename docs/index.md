@@ -60,23 +60,23 @@ Nautilus is a Face Turning Octahedron (FTO) speedsolving method designed for erg
 
 ## Example Solve
 
-<div class="solve-container">
+<div class="solve-row">
+   <div class="solve-container">
 
-<twisty-player
-  id="fto-player"
-  puzzle="fto"
-  experimental-setup-alg="LBLv L D R' B L' B R D U' L' B' R U B U' B D' R L' D' F' BR' R' L U B'"
-  alg="Uv U' BL L D L' R U' L' U L // Arrow block
-  U' B U' B' // Finish first block&#10;U R' U' r' U R' U' R U R' // First center
-  U' r' U' R U' R' U' R U R' U r' // Second center
-  U R BR' br U BR U' br' R' // Last triple
-  br U BR' U' br' F BR F' // L6X
-  br' R U' R' br U br' R U' R' br // Last 3 Corners"
-  background="none"
-></twisty-player>
+    <twisty-player
+        id="fto-player"
+        puzzle="fto"
+        experimental-setup-alg="LBLv L D R' B L' B R D U' L' B' R U B U' B D' R L' D' F' BR' R' L U B'"
+        alg="Uv U' BL L D L' R U' L' U L // Arrow block
+        U' B U' B' // Finish first block&#10;U R' U' r' U R' U' R U R' // First center
+        U' r' U' R U' R' U' R U R' U r' // Second center
+        U R BR' br U BR U' br' R' // Last triple
+        br U BR' U' br' F BR F' // L6X
+        br' R U' R' br U br' R U' R' br // Last 3 Corners"
+        background="none"
+        style="max-width: 300px; height: 400px; margin-top: -30px;"
+    ></twisty-player>
 
-<twisty-alg-viewer
-  for="fto-player"
-></twisty-alg-viewer>
-
+    <twisty-alg-viewer id="fto-alg-viewer" for="fto-player"></twisty-alg-viewer>
+  </div>
 </div>

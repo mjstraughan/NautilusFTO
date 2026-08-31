@@ -21,6 +21,21 @@
   margin-top: var(--md-header-height);
 }
 
+/* Reset the main content container top margin */
+.md-main {
+  margin-top: 0;
+}
+
+/* Tighten the padding at the very top of the page content */
+.md-content {
+  padding-top: 1rem; /* Adjust down to 0.5rem if you want it even closer */
+}
+
+/* Reduce top margin on the first heading on the page */
+.md-content__inner > h1:first-child {
+  margin-top: 0.5rem;
+}
+
 /* Increase or decrease the Site Title font size */
 .md-header__title {
   font-size: 2rem; /* Default is ~1rem. Increase to 1.8rem, 2rem, etc. */
@@ -54,6 +69,54 @@
   max-width: 100%;
 }
 
+/* ☀️ LIGHT MODE BLUE LINK STYLE */
+[data-md-color-scheme="default"] .custom-styled-link {
+  color: #1A365D !important; /* Deep Navy base */
+}
+[data-md-color-scheme="default"] .custom-styled-link:hover {
+  color: #007BFF !important; /* Vivid Electric Blue hover */
+}
+
+/* 🌙 DARK MODE BLUE LINK STYLE */
+[data-md-color-scheme="slate"] .custom-styled-link {
+  color: #3B82F6 !important; /* Royal Blue base (high visibility against slate) */
+}
+[data-md-color-scheme="slate"] .custom-styled-link:hover {
+  color: #00E5FF !important; /* Neon Bright Blue hover */
+}
+
+/* 📐 UNIVERSAL ALIGNMENT & FONT RULES */
+.custom-styled-link {
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.centered-link-wrapper {
+  text-align: center;
+  margin: 24px 0;
+}
+
+/* Container to center the link line */
+.centered-link-wrapper {
+  text-align: center;
+  margin: 20px 0; /* Optional: adds space above and below */
+}
+
+/* Custom styles for the link itself */
+.custom-styled-link {
+  font-weight: bold;         /* Bold the text */
+  font-size: 24px;           /* Resize the link text */
+  color: #ff5722 !important; /* Recolor the link (adjust hex as needed) */
+  text-decoration: none;     /* Optional: removes the underline */
+}
+
+/* Optional hover state color adjustment */
+.custom-styled-link:hover {
+  color: #e64a19 !important; 
+}
+
+
 /* Card wrapper for each pair */
 .pair-card {
   display: flex;
@@ -79,6 +142,28 @@
   justify-content: center;
   width: 100%;
   margin: 2rem 0;
+}
+
+/* Row wrapper for placing two solve-containers side by side */
+.solve-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.solve-row .solve-container {
+  width: auto;
+  flex: 1 1 300px;
+  min-width: 0;
+  margin: 1rem 0;
+}
+
+/* Match alg-viewer width to the player width used inside .solve-container */
+.solve-container twisty-alg-viewer {
+  width: 300px;
+  max-width: 100%;
 }
 
 /* Single solve player only styling */
@@ -116,4 +201,33 @@ twisty-alg-viewer {
   justify-content: center;
   align-items: center;
   margin: 1.5rem 0;
+}
+
+/* NEW: let applets shrink and split their row's width evenly */
+.applet-grid-nowrap,
+.applet-grid-wrap {
+  min-width: 0;
+}
+
+.applet-grid-nowrap twisty-player,
+.applet-grid-wrap twisty-player {
+  flex: 1 1 0;
+  min-width: 0;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-width: 260px; /* ceiling so a lone applet in a row doesn't get huge */
+}
+
+/* Row wrapper for placing two pair-cards side by side */
+.pair-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.pair-row .pair-card {
+  margin: 1rem 0;   /* drop the left/right auto margin from .pair-card while in a row */
+  min-width: 0;
+  flex: 1 1 300px;
 }

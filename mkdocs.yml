@@ -6,9 +6,20 @@ theme:
   logo: assets/Icon.png
   favicon: assets/Icon.png
   palette:
-    scheme: default # use 'slate' for dark mode)
-    primary: indigo
-    accent: blue
+    # Light Mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark Mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
   features:
     - navigation.tabs # Moves navigation links into the TOP HEADER bar
     - navigation.tabs.sticky # Keeps header bar pinned while scrolling
@@ -23,6 +34,7 @@ extra_javascript:
 markdown_extensions:
   - md_in_html
   - extra
+  - attr_list
 
 # Extra CSS for header banner styling
 extra_css:
@@ -38,3 +50,7 @@ nav:
   - Baby Nautilus: BabyNautilus.md
   - Notation: Notation.md
   - Summary: Summary.md
+  - Algorithms: Algorithms.md
+
+extra:
+  generator: false
