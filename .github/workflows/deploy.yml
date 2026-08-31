@@ -3,10 +3,10 @@ name: Deploy MkDocs to GitHub Pages
 on:
   push:
     branches:
-      - main  # Triggers the build whenever you commit/push to the main branch
+      - main
 
 permissions:
-  contents: write # Allows the workflow to push the built site to your gh-pages branch
+  contents: write
 
 jobs:
   deploy:
@@ -19,6 +19,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
+
+      - name: Install system dependencies for social cards
+        run: sudo apt-get update && sudo apt-get install -y libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev
 
       - name: Install MkDocs and Dependencies
         run: |
