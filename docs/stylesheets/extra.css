@@ -231,3 +231,21 @@ twisty-alg-viewer {
   min-width: 0;
   flex: 1 1 300px;
 }
+
+/* Row of images displayed side by side */
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.image-row img {
+  flex: 1 1 150px;
+  min-width: 0;
+  max-width: 150px;
+  height: auto;
+  border-radius: 4px;
+}

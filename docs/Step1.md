@@ -1,6 +1,6 @@
 # First Block
 
-The first step is to solve a block consisting of a large center and two triples. Once solved, keep this block on the left side with the U and wide r layers free to turn. A guide for solving the step is provided below. Before beginning, be sure to check out the notation on the Introduction page.
+The first step is to solve a block consisting of a large center and two triples. Once solved, keep this block on the left side with the U and wide r layers free to turn. A guide for solving the step is provided below, following an introduction to the workings of the FTO so that you can get familiar with its pieces and the way it turns.
 
 <div class="applet-grid-nowrap">
 
@@ -15,6 +15,99 @@ The first step is to solve a block consisting of a large center and two triples.
     ></twisty-player>
 
 </div>
+
+## Getting to Know the FTO
+
+Before getting started, it is important to know how the FTO works. There are three types of pieces: Corners (four stickers each), Edges (two stickers), and Triangles (one sticker). The pieces called triangles may be considered the center pieces of the FTO, but are typically called triangles in order to distinguish them from steps that involve building large centers of a layer, consisting of three triangles and three edges.
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
+    <div class="pair-card">
+    <div class="applet-grid-nowrap">
+        <twisty-player
+            puzzle="fto"
+            experimental-stickering-mask-orbits="C4RNER:------,CENTERS:IIIIIIIIIIIIIIIIIIIIIIII,EDGES:IIIIIIIIIIII"
+            experimental-setup-alg="LBLv"
+            experimental-setup-anchor="end"
+            camera-distance="6.2"
+            background="none"
+            control-panel="none"
+        ></twisty-player>
+    </div>
+    
+        <p class="pair-caption">Corners</p>
+    </div>
+
+    <div class="pair-card">
+    <div class="applet-grid-nowrap">
+        <twisty-player
+            puzzle="fto"
+            experimental-stickering-mask-orbits="C4RNER:IIIIII,CENTERS:IIIIIIIIIIIIIIIIIIIIIIII,EDGES:------------"
+            experimental-setup-alg="LBLv"
+            experimental-setup-anchor="end"
+            camera-distance="6.2"
+            background="none"
+            control-panel="none"
+        ></twisty-player>
+        </div>
+
+        <p class="pair-caption">Edges</p>
+    </div>
+
+    <div class="pair-card">
+    <div class="applet-grid-nowrap">
+        <twisty-player
+            puzzle="fto"
+            experimental-stickering-mask-orbits="C4RNER:IIIIII,CENTERS:------------------------,EDGES:IIIIIIIIIIII"
+            experimental-setup-alg="LBLv"
+            experimental-setup-anchor="end"
+            camera-distance="6.2"
+            background="none"
+            control-panel="none"
+        ></twisty-player>
+        </div>
+
+        <p class="pair-caption">Triangles</p>
+    </div>
+</div>
+
+When an FTO layer is turned three corners, three edges, and nine triangles are moved (three on the outer face and six around the sides of the layer).
+
+<div class="applet-grid-nowrap">
+
+    <twisty-player
+        id="spin-player"
+        puzzle="fto"
+        background="none"
+        control-panel="none"
+        style="max-width: 300px; height: 300px;"
+    ></twisty-player>
+
+</div>
+
+<script>
+(function () {
+  const player = document.getElementById('spin-player');
+  const spinAlg = "U U U U U U U U U";
+  const msPerMove = 320;
+  const totalMs = spinAlg.trim().split(/\s+/).length * msPerMove;
+
+  customElements.whenDefined('twisty-player').then(() => {
+    function loop() {
+      player.alg = '';
+      requestAnimationFrame(() => {
+        player.alg = spinAlg;
+        player.play();
+      });
+    }
+
+    player.alg = spinAlg;
+    player.play();
+    setInterval(loop, totalMs);
+  });
+})();
+</script>
+
+A final important note is to check the Notation page to learn the labels for each layer so that you can follow along with algorithms. The Notation page provides the notation for when holding the FTO with a corner in the front, an edge in front hold, and also covers rotations of the entire FTO.
 
 ## Center
 
@@ -130,7 +223,7 @@ Solving the second triple uses the same process. First, pair the corner with a t
 
 ## Arrow Block
 
-Once comfortable with solving the first block using the three steps of center and two triples, the steps can be combined. A triple can be combined with the center in a single to form an arrow block. Two important strategies will be shown through examples.
+Once comfortable with solving the first block using the three steps of center and two triples, the steps can be combined. A triple can be combined with the center in a single step to form an arrow block. Two important strategies will be shown through examples.
 
 <div class="solve-container">
 
