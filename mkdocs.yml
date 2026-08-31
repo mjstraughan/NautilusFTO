@@ -1,5 +1,6 @@
 site_name: Nautilus
 site_description: Nautilus method for the FTO twisty puzzle
+site_url: https://nautilusfto.com
 
 theme:
   name: material
