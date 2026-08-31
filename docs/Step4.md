@@ -1,3 +1,8 @@
+---
+title: Last Layer - Nautilus
+description: Last layer guide for the Nautilus FTO method
+---
+
 # Last Layer
 
 In the final step, solve the last layer. The major advantage of ending in a last layer is that recognition is easy. All of the necessary stickers are on the sides of the last layer, with two out of three sides in view. During the previous step of solving the last triple look ahead to watch a single triangle go to the back layer and recognition will be completely two sided.
@@ -228,7 +233,7 @@ There are additional algorithms that can further speed up the process. If there 
 Once accustomed to the two look version of solving the triangles, algorithms can be learned to solve all cases in a single step. There are just 35 algorithms and the recognition works similar to PLL. Each case can be identified based on its pattern. These patterns consist of the diamonds, headlights, cat ears, and chameleons that were practiced in the two look version. Visit the document below for the algorithm list.
 
 <div class="centered-link-wrapper">
-    <a href="https://docs.google.com/spreadsheets/d/1Dh4MEQzpCuTylqnkn09UxBEvEq9MNYMqMiWQgFsBuYE/edit?usp=sharing" class="custom-styled-link">Last Layer Algorithms Link</a>
+    <a href="https://docs.google.com/spreadsheets/d/1Dh4MEQzpCuTylqnkn09UxBEvEq9MNYMqMiWQgFsBuYE/edit?usp=sharing" class="custom-styled-link" target="_blank" rel="noopener noreferrer">Last Layer Algorithms Link</a>
 </div>
 
 ## Part 2: Last Three Corners (L3C)
@@ -308,7 +313,7 @@ One look L3C is only five algorithms. You will already know two of the algorithm
 An additional note is that the corners can be recognized just by checking the sides. At first it is easiest to recognize by checking the upper face to get the corner orientation then checking the sides to determine the permutation. The algorithm document below provides the patterns so that you can skip looking at the upper face and more quickly recognize the corner case by only checking the two visible left and right sides.
 
 <div class="centered-link-wrapper">
-    <a href="https://docs.google.com/spreadsheets/d/1Dh4MEQzpCuTylqnkn09UxBEvEq9MNYMqMiWQgFsBuYE/edit?usp=sharing" class="custom-styled-link">Last Layer Algorithms Link</a>
+    <a href="https://docs.google.com/spreadsheets/d/1Dh4MEQzpCuTylqnkn09UxBEvEq9MNYMqMiWQgFsBuYE/edit?usp=sharing" class="custom-styled-link" target="_blank" rel="noopener noreferrer">Last Layer Algorithms Link</a>
 </div>
 
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
@@ -425,5 +430,5 @@ The ultimate goal for the last layer is to learn 1LLL. Sets can be learned while
 Malte Ihlefeld has created a document for 1LLL algorithms viewable below.
 
 <div class="centered-link-wrapper">
-    <a href="https://docs.google.com/spreadsheets/d/15v0A0PipO8RcEeS7TFAaAv3dI1zBykaopkXQK_WnLo0/edit?gid=1497905026#gid=1497905026" class="custom-styled-link">1LLL Algorithms</a>
+    <a href="https://docs.google.com/spreadsheets/d/15v0A0PipO8RcEeS7TFAaAv3dI1zBykaopkXQK_WnLo0/edit?gid=1497905026#gid=1497905026" class="custom-styled-link" target="_blank" rel="noopener noreferrer">1LLL Algorithms</a>
 </div>

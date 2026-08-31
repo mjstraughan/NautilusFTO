@@ -1,3 +1,8 @@
+---
+title: First Block - Nautilus
+description: First block guide for the Nautilus FTO method
+---
+
 # First Block
 
 The first step is to solve a block consisting of a large center and two triples. Once solved, keep this block on the left side with the U and wide r layers free to turn. A guide for solving the step is provided below, following an introduction to the workings of the FTO so that you can get familiar with its pieces and the way it turns.

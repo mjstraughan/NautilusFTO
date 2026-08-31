@@ -1,3 +1,8 @@
+---
+title: Centers - Nautilus
+description: Centers guide for the Nautilus FTO method
+---
+
 # Centers
 
 In the next step, solve the three large centers to the right of the first block. These are the F, BR, and U centers. Only two need to be solved and the third center will be automatically solved. The move set is now reduced to U, R, r and slice turns. This will feel familiar to those experienced with the center solving process of big cubes.

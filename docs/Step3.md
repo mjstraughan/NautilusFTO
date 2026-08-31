@@ -1,3 +1,8 @@
+---
+title: Last Triple - Nautilus
+description: Last triple guide for the Nautilus FTO method
+---
+
 # Last Triple
 
 Solve the last triple of the first two layers. Two approaches are provided, one is intuitive and the other is algorithmic. The intuitive version is great for new users who want to start solving immediately. Then once comfortable with the intuitive version, the algorithmic version provides a lower move count and higher TPS due to the speed optimal solutions.
@@ -377,7 +382,7 @@ The last step to solving the triple is to solve the bottom triangle. This involv
 Once accustomed to the starter steps, the first two parts of solving the triple can be combined. The corner and front layer triangle can be simultaneously solved using one of 23 algorithms. Then solve the bottom triangle using a simple solutions above. Go to the document below for the complete algorithm list.
 
 <div class="centered-link-wrapper">
-    <a href="https://docs.google.com/spreadsheets/d/1NSa4MMV10ma4nNJKRfET_M1OwxULN_oSWUkThwLcTh0/edit?gid=323120253#gid=323120253" class="custom-styled-link">Malte Ihlefeld's Last Triple Algorithms</a>
+    <a href="https://docs.google.com/spreadsheets/d/1NSa4MMV10ma4nNJKRfET_M1OwxULN_oSWUkThwLcTh0/edit?gid=323120253#gid=323120253" class="custom-styled-link" target="_blank" rel="noopener noreferrer">Malte Ihlefeld's Last Triple Algorithms</a>
 </div>
 
 ## One Look Triple
@@ -385,11 +390,11 @@ Once accustomed to the starter steps, the first two parts of solving the triple 
 The most advanced version of solving the triple is to solve the three pieces all at once. The full set can be learned from the following algorithm documents.
 
 <div class="centered-link-wrapper">
-    <a href="https://docs.google.com/spreadsheets/d/1NSa4MMV10ma4nNJKRfET_M1OwxULN_oSWUkThwLcTh0/edit?gid=323120253#gid=323120253" class="custom-styled-link">Malte Ihlefeld's Last Triple Algorithms</a>
+    <a href="https://docs.google.com/spreadsheets/d/1NSa4MMV10ma4nNJKRfET_M1OwxULN_oSWUkThwLcTh0/edit?gid=323120253#gid=323120253" class="custom-styled-link" target="_blank" rel="noopener noreferrer">Malte Ihlefeld's Last Triple Algorithms</a>
 </div>
 
 <div class="centered-link-wrapper">
-    <a href="https://docs.google.com/spreadsheets/d/1gJHxSOoP-m6AlGgdPDzme0Hw4mS2RvJJ76D6OKiNOyA/edit?gid=1108390574#gid=1108390574" class="custom-styled-link">Liam Highducheck's Last Triple Algorithms</a>
+    <a href="https://docs.google.com/spreadsheets/d/1gJHxSOoP-m6AlGgdPDzme0Hw4mS2RvJJ76D6OKiNOyA/edit?gid=1108390574#gid=1108390574" class="custom-styled-link" target="_blank" rel="noopener noreferrer">Liam Highducheck's Last Triple Algorithms</a>
 </div>
 
 ## Avoiding Corner in Slot

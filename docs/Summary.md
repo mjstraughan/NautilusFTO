@@ -1,11 +1,16 @@
+---
+title: Summary - Nautilus
+description: Summary and additional ideas for the Nautilus FTO method
+---
+
 # Summary
 
 <div class="centered-link-wrapper">
-    <a href="https://discord.gg/GJB2ER2Q3M" class="custom-styled-link">Join My Discord Server</a>
+    <a href="https://discord.gg/GJB2ER2Q3M" class="custom-styled-link" target="_blank" rel="noopener noreferrer">Join My Discord Server</a>
 </div>
 
 <div class="centered-link-wrapper">
-    <a href="https://sites.google.com/site/athefre" class="custom-styled-link">My Main Development Website</a>
+    <a href="https://sites.google.com/site/athefre" class="custom-styled-link" target="_blank" rel="noopener noreferrer">My Main Development Website</a>
 </div>
 
 The Nautilus method is developed by Michael James Straughan (Athefre) in coordination with several others. Liam Highducheck, Vincent Trang, Malte Ihlefeld, Ryan Hudgens, and mrmangohands have all contributed step ideas, algorithms, and general thoughts that have refined Nautilus. Several others have also contributed algorithms. crystalcuber has been pivotal in ensuring that Nautilus has high quality images, with his development of an <a href="https://fto-image-gen.netlify.app/">image generator</a>. Join my Discord server above to become part of the community.
@@ -15,7 +20,7 @@ Why is it called Nautilus? Nautilus started as a method for 3x3. That method sol
 Puzzle community member Fuvash has written a tutorial for the Japanese community. It is very detailed, providing individual articles for each step of the method, including images and numerous example solves for each step. The tutorial even goes in depth into a color neutrality technique and teaches the advanced last slot building technique mentioned below on this page.
 
 <div class="centered-link-wrapper">
-    <a href="https://note.com/fuvash/m/maf9b83914c39" class="custom-styled-link">Nautilus Guide in Japanese</a>
+    <a href="https://note.com/fuvash/m/maf9b83914c39" class="custom-styled-link" target="_blank" rel="noopener noreferrer">Nautilus Guide in Japanese</a>
 </div>
 
 ## Future of F2L
@@ -109,7 +114,7 @@ Expanding the Nautilus last triple step to solving the three F2L triples makes f
 </div>
 
 <div class="centered-link-wrapper">
-    <a href="https://sites.google.com/view/cfl-fto" class="custom-styled-link">CFL Website</a>
+    <a href="https://sites.google.com/view/cfl-fto" class="custom-styled-link" target="_blank" rel="noopener noreferrer">CFL Website</a>
 </div>
 
 ### EIF FB + Stripe
@@ -247,7 +252,7 @@ If the bottom layer triangle is already solved at the start, or was intentionall
 Community member Fuvash has developed an extension to this technique. The corners can be completely solved in the process, leaving just pure L6X as the last layer step.
 
 <div class="centered-link-wrapper">
-    <a href="https://hackmd.io/@fuvash/fto-nautilus-i-lscll" class="custom-styled-link">LSCLL by Fuvash</a>
+    <a href="https://hackmd.io/@fuvash/fto-nautilus-i-lscll" class="custom-styled-link" target="_blank" rel="noopener noreferrer">LSCLL by Fuvash</a>
 </div>
 
 ## Advanced Last Slot

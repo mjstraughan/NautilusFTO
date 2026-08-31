@@ -1,3 +1,8 @@
+---
+title: Notation - Nautilus
+description: FTO notation guide
+---
+
 # Notation
 
 ## Corner in Front Notation
