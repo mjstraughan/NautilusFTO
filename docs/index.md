@@ -1,5 +1,5 @@
 ---
-title: Inroduction - Nautilus
+title: Introduction - Nautilus
 description: Introduction to the Nautilus method for FTO
 ---
 
