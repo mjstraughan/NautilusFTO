@@ -31,6 +31,10 @@ extra_javascript:
   - path: https://cdn.cubing.net/v0/js/cubing/twisty
     type: module
 
+plugins:
+  - search
+  - social
+
 # Add markdown_extensions to allow raw HTML blocks
 markdown_extensions:
   - md_in_html
