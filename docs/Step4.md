@@ -266,8 +266,7 @@ First, orient the corners using the following algorithm. Turn the upper layer to
 
 To permute the corners, use the following algorithm. The algorithm cycles the corners clockwise. Use the algorithm once or twice to cycle the corners and complete the permutation. {F, BR} means to rotate the puzzle to move the front layer to the upper layer and the BR layer to the front.
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
-    <div class="pair-card">
+<div class="pair-card">
     <div class="applet-grid-nowrap">
     <twisty-player
         puzzle="fto"
@@ -295,9 +294,7 @@ To permute the corners, use the following algorithm. The algorithm cycles the co
         control-panel="none"
     ></twisty-player>
     </div>
-    
     <p class="pair-caption">{F, BR} R' U R' D' R U' R' D R2</p>
-    </div>
 </div>
 
 ### One Look
