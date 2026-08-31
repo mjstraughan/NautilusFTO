@@ -49,6 +49,10 @@
   width: auto;
 }
 
+.md-footer {
+  display: none;
+}
+
 /* Force bold on markdown content headings */
 .md-typeset h1, 
 .md-typeset h2, 
