@@ -15,7 +15,7 @@ description: Summary and additional ideas for the Nautilus FTO method
 
 The Nautilus method is developed by Michael James Straughan (Athefre) in coordination with several others. Liam Highducheck, Vincent Trang, Malte Ihlefeld, Ryan Hudgens, and mrmangohands have all contributed step ideas, algorithms, and general thoughts that have refined Nautilus. Several others have also contributed algorithms. crystalcuber has been pivotal in ensuring that Nautilus has high quality images, with his development of an <a href="https://fto-image-gen.netlify.app/">image generator</a>. Join my Discord server above to become part of the community.
 
-Why is it called Nautilus? Nautilus started as a method for 3x3. That method solves F2L minus a 1x2x2 block, called LXS or the LXSLL state. This allows for <U, r U r'> turning. Eventually <U, r U r'> and the general shape idea became a concept of its own that easily adapts to other puzzles. As for FTO, the main steps of Nautilus taught on the website correspond with the 3x3 Nautilus method because the step 1 FB and step 2 large centers steps create a similar shape to the LXSLL state, leaving just a "front" pair and a last layer to be solved. Within the "Future of F2L" section on this page there is an idea for an EIF version of Nautilus that does FB then a 2x2x2 triangle block within the F2L, also leaving the FTO in the <U, r U r'> state.
+Why is it called Nautilus? Nautilus started as a method for 3x3. That method solves F2L minus a 1x2x2 block, called LXS or the LXSLL state. This allows for ```<U, r U r'>``` turning. Eventually ```<U, r U r'>``` and the general shape idea became a concept of its own that easily adapts to other puzzles. As for FTO, the main steps of Nautilus taught on the website correspond with the 3x3 Nautilus method because the step 1 FB and step 2 large centers steps create a similar shape to the LXSLL state, leaving just a "front" pair and a last layer to be solved. Within the "Future of F2L" section on this page there is an idea for an EIF version of Nautilus that does FB then a 2x2x2 triangle block within the F2L, also leaving the FTO in the ```<U, r U r'>``` state.
 
 Puzzle community member Fuvash has written a tutorial for the Japanese community. It is very detailed, providing individual articles for each step of the method, including images and numerous example solves for each step. The tutorial even goes in depth into a color neutrality technique and teaches the advanced last slot building technique mentioned below on this page.
 
@@ -170,7 +170,7 @@ A completely different approach to F2L is to make EIF the default throughout.
 
 ### EIF 3x3 Nautilus
 
-Transferring 3x3 Nautilus to an EIF hold still maintains the "r U* r'" F2L property that is the unique property of the Nautilus solving concept. This means that the steps can be FB + R center > 2x2x2 pyramid in the back> F2L minus LS > LS > LL.
+Transferring 3x3 Nautilus to an EIF hold still maintains the ```<U, r U r'>``` F2L property that is the unique property of the Nautilus solving concept. This means that the steps can be FB + R center > 2x2x2 pyramid in the back> F2L minus LS > LS > LL.
 
 <div class="applet-grid-nowrap">
     <twisty-player
