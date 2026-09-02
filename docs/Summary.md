@@ -170,7 +170,7 @@ A completely different approach to F2L is to make EIF the default throughout.
 
 ### EIF 3x3 Nautilus
 
-Transferring 3x3 Nautilus to an EIF hold still maintains the ```<U, r U r'>``` F2L property that is the unique property of the Nautilus solving concept. This means that the steps can be FB + R center > 2x2x2 pyramid in the back> F2L minus LS > LS > LL.
+Transferring 3x3 Nautilus to an EIF hold still maintains the ```<U, r U r'>``` F2L property that is the unique property of the Nautilus solving concept. This means that the steps can be FB + R center > 2x2x2 pyramid in the back > F2L minus LS > LS > LL.
 
 <div class="applet-grid-nowrap">
     <twisty-player
