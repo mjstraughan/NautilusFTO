@@ -36,7 +36,7 @@ Provided on this page are algorithm sheets for quick access.
 <div class="applet-grid-nowrap">
 <twisty-player
     puzzle="fto"
-    experimental-stickering-mask-orbits="C4RNER:-D-D-D,CENTERS:D-D--DDDDDDDDD---DDDDDDD,EDGES:DDDDDDDDDDDD"
+    experimental-stickering-mask-orbits="C4RNER:-D-D-D,CENTERS:D-D--D-D-DDDDD----DDDDDD,EDGES:D-D-D-DDDDDD"
 experimental-setup-alg="LBLv"
 experimental-setup-anchor="end"
     background="none"

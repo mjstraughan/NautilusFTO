@@ -27,7 +27,7 @@ From this point onward, use an edge in front (EIF) hold. This means to slightly 
 
 ## Intuitive Last Triple
 
-The last triple can also be solved completely intuitively by following a process similar to 3x3 F2L corner and edge pairing.
+The last triple can be solved completely intuitively by following a process similar to 3x3 F2L corner and edge pairing.
 
 ### First Triangle
 
