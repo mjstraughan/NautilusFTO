@@ -33,7 +33,10 @@ extra_javascript:
 
 plugins:
   - search
-  - social
+  - social:
+      cards_layout_options:
+        background_image: docs/assets/Banner.png
+        background_color: transparent
 
 # Add markdown_extensions to allow raw HTML blocks
 markdown_extensions:
