@@ -1,5 +1,5 @@
 ---
-title: Centers - Nautilus
+title: Centers
 description: Centers guide for the Nautilus FTO method
 ---
 

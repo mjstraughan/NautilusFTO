@@ -1,5 +1,5 @@
 ---
-title: First Block - Nautilus
+title: First Block
 description: First block guide for the Nautilus FTO method
 ---
 

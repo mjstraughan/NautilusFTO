@@ -1,5 +1,5 @@
 ---
-title: Introduction - Nautilus
+title: Introduction
 description: Introduction to the Nautilus method for FTO
 ---
 

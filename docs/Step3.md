@@ -1,5 +1,5 @@
 ---
-title: Last Triple - Nautilus
+title: Last Triple
 description: Last triple guide for the Nautilus FTO method
 ---
 

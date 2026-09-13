@@ -1,5 +1,5 @@
 ---
-title: Algorithms - Nautilus
+title: Algorithms
 description: Algorithms for the Nautilus FTO method
 ---
 

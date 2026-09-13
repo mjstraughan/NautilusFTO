@@ -1,5 +1,5 @@
 ---
-title: Notation - Nautilus
+title: Notation
 description: FTO notation guide
 ---
 

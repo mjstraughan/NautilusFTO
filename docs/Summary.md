@@ -1,5 +1,5 @@
 ---
-title: Summary - Nautilus
+title: Summary
 description: Summary and additional ideas for the Nautilus FTO method
 ---
 

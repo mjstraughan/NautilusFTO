@@ -1,5 +1,5 @@
 ---
-title: Last Layer - Nautilus
+title: Last Layer
 description: Last layer guide for the Nautilus FTO method
 ---
 
