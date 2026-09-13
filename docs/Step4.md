@@ -57,7 +57,7 @@ The applets depict an overhead view of the last layer with the front corner at t
         control-panel="none"
         ></twisty-player>
     </div>
-    <p class="pair-caption">{U, R} (U') R U R' U' R' r U R U' r'</p>
+    <p class="pair-caption">{U, R} (U') R U R' U' r R' U R U' r'</p>
 </div>
 
 <div class="pair-card">
