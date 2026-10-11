@@ -436,60 +436,65 @@ To reduce the number of cases for the last triple, it can be ensured that the co
 <script>
 function setupAlgRelabel(viewerId, displayMoves) {
   const viewer = document.getElementById(viewerId);
-  if (!viewer) return;
+  if (!viewer || viewer.dataset.relabelBound) return;
+  viewer.dataset.relabelBound = "1";
+
+  const observed = new WeakSet();
 
   function relabel() {
-    const moveEls = viewer.querySelectorAll('.twisty-alg-move');
-    if (moveEls.length !== displayMoves.length) return false;
+    const root = viewer.shadowRoot || viewer;
 
-    let successCount = 0;
+    // Watch the shadow root too, once it exists
+    if (!observed.has(root)) {
+      observed.add(root);
+      observer.observe(root, { childList: true, subtree: true, characterData: true });
+    }
+
+    const moveEls = root.querySelectorAll('.twisty-alg-move');
+    if (moveEls.length !== displayMoves.length) return;
+
     moveEls.forEach((el, i) => {
-      // Look into the element or its shadow root for text nodes
-      const textEl = el.shadowRoot 
-        ? el.shadowRoot.querySelector('a, span') 
-        : el.querySelector('a, span');
-
-      if (textEl && textEl.textContent !== displayMoves[i]) {
-        textEl.textContent = displayMoves[i];
-        successCount++;
-      } else if (textEl) {
-        successCount++;
+      const target = el.querySelector('a') || el.querySelector('span') || el;
+      if (target.textContent !== displayMoves[i]) {
+        target.textContent = displayMoves[i];
       }
     });
-
-    // Only disconnect when ALL moves have been successfully targeted and updated
-    return successCount === displayMoves.length;
   }
 
-  const observer = new MutationObserver(() => {
-    if (relabel()) observer.disconnect();
-  });
-
+  // Only writes when text differs, so this can't loop forever
+  const observer = new MutationObserver(relabel);
   observer.observe(viewer, { childList: true, subtree: true });
-  
-  // Initial check in case it's already rendered
-  if (relabel()) observer.disconnect();
+  relabel();
 }
 
-// Ensure execution runs after DOM ready (helps with MkDocs SPA navigation)
-document.addEventListener("DOMContentLoaded", () => {
-    setupAlgRelabel('fto-alg-viewer-1', ["F", "R", "U'", "R'", "U", "F'"]);
-    setupAlgRelabel('fto-alg-viewer-2', ["R", "U'", "R'"]);
-    setupAlgRelabel('fto-alg-viewer-3', ["L'", "U", "L"]);
-    setupAlgRelabel('fto-alg-viewer-4', ["F", "R", "U", "R'", "U'", "F'"]);
-    setupAlgRelabel('fto-alg-viewer-5', ["F'", "L'", "U'", "L", "U", "F"]);
-    setupAlgRelabel('fto-alg-viewer-6', ["F", "U", "R", "U'", "R'", "F'"]);
-    setupAlgRelabel('fto-alg-viewer-7', ["F'", "U'", "L'", "U", "L", "F"]);
-    setupAlgRelabel('fto-alg-viewer-8', ["F'", "U", "R", "U", "R'", "U", "F'"]);
-    setupAlgRelabel('fto-alg-viewer-9', ["F", "U'", "L'", "U'", "L", "U'", "F'"]);
-    setupAlgRelabel('fto-alg-viewer-10', ["F'", "L'", "U", "L", "R", "U", "R'", "U", "F"]);
-    setupAlgRelabel('fto-alg-viewer-11', ["R", "U'", "R'"]);
-    setupAlgRelabel('fto-alg-viewer-12', ["L'", "U", "L"]);
-    setupAlgRelabel('fto-alg-viewer-13', ["F", "r", "U", "R'", "U'", "r'", "R", "F'"]);
-    setupAlgRelabel('fto-alg-viewer-14', ["U", "R", "U", "r'", "R", "U'", "R'", "U", "r", "R'"]);
-    setupAlgRelabel('fto-alg-viewer-15', ["(U')", "F", "R", "U", "R'", "U'", "F'"]);
-    setupAlgRelabel('fto-alg-viewer-16', ["F", "U", "R", "U'", "R'", "F'"]);
-    setupAlgRelabel('fto-alg-viewer-17', ["F", "r", "U", "R'", "U'", "R", "br'", "F'"]);
-});
-</script>
+function initRelabels() {
+  setupAlgRelabel('fto-alg-viewer-1', ["F", "R", "U'", "R'", "U", "F'"]);
+  setupAlgRelabel('fto-alg-viewer-2', ["R", "U'", "R'"]);
+  setupAlgRelabel('fto-alg-viewer-3', ["L'", "U", "L"]);
+  setupAlgRelabel('fto-alg-viewer-4', ["F", "R", "U", "R'", "U'", "F'"]);
+  setupAlgRelabel('fto-alg-viewer-5', ["F'", "L'", "U'", "L", "U", "F"]);
+  setupAlgRelabel('fto-alg-viewer-6', ["F", "U", "R", "U'", "R'", "F'"]);
+  setupAlgRelabel('fto-alg-viewer-7', ["F'", "U'", "L'", "U", "L", "F"]);
+  setupAlgRelabel('fto-alg-viewer-8', ["F'", "U", "R", "U", "R'", "U", "F'"]);
+  setupAlgRelabel('fto-alg-viewer-9', ["F", "U'", "L'", "U'", "L", "U'", "F'"]);
+  setupAlgRelabel('fto-alg-viewer-10', ["F'", "L'", "U", "L", "R", "U", "R'", "U", "F"]);
+  setupAlgRelabel('fto-alg-viewer-11', ["R", "U'", "R'"]);
+  setupAlgRelabel('fto-alg-viewer-12', ["L'", "U", "L"]);
+  setupAlgRelabel('fto-alg-viewer-13', ["F", "r", "U", "R'", "U'", "r'", "R", "F'"]);
+  setupAlgRelabel('fto-alg-viewer-14', ["U", "R", "U", "r'", "R", "U'", "R'", "U", "r", "R'"]);
+  setupAlgRelabel('fto-alg-viewer-15', ["(U')", "F", "R", "U", "R'", "U'", "F'"]);
+  setupAlgRelabel('fto-alg-viewer-16', ["F", "U", "R", "U'", "R'", "F'"]);
+  setupAlgRelabel('fto-alg-viewer-17', ["F", "r", "U", "R'", "U'", "R", "br'", "F'"]);
+}
 
+// Works for normal loads...
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initRelabels);
+} else {
+  initRelabels();
+}
+// ...and for Material for MkDocs instant navigation
+if (typeof document$ !== "undefined") {
+  document$.subscribe(initRelabels);
+}
+</script>
